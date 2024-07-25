@@ -1,3 +1,14 @@
-[gd_scene format=3 uid="uid://dpj28kapo0l2d"]
+[gd_scene load_steps=4 format=3 uid="uid://dpj28kapo0l2d"]
+
+[ext_resource type="Shader" path="res://textures/node_2d.gdshader" id="1_uwcx5"]
+[ext_resource type="Texture2D" uid="uid://cw4suv3n7y7ko" path="res://textures/green_waves.png" id="2_wg3p0"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1mt0h"]
+shader = ExtResource("1_uwcx5")
 
 [node name="Node2D" type="Node2D"]
+
+[node name="GreenWaves" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_1mt0h")
+position = Vector2(128, 128)
+texture = ExtResource("2_wg3p0")
